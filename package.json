@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ysobarbosa/api-RESTful-DevMedia/issues"
   },
-  "homepage": "https://github.com/ysobarbosa/api-RESTful-DevMedia#readme"
+  "homepage": "https://github.com/ysobarbosa/api-RESTful-DevMedia#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
