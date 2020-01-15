@@ -1,5 +1,6 @@
 const http = require("http");
 const express = require('express');
+const spoilersRoutes = require('./router/spoilers');
 
 const app = express();
 
@@ -8,6 +9,11 @@ const port = 3000;
 
 app.set("port", port);
 
+//configura a api para trazer um retorno em json para o cliente
+app.use(express.json());
+
+app.use('/api', spoilersRoute)
+;
 app.use((request, response, next) => {
     response.status(404).send();
 });
